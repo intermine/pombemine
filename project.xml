@@ -3,15 +3,6 @@
   <property name="common.os.prefix" value="common"/>
 
   <sources>
-    <source name="ncbi-gene" type="ncbi-gene">
-      <property name="src.data.dir" location="/micklem/data/ncbi/current/"/>
-      <property name="organisms" value="9606"/>
-    </source>
-
-    <source name="hgnc" type="hgnc">
-      <property name="src.data.dir" location="/micklem/data/human/hgnc/current" />
-    </source>
-
     <source name="uniprot" type="uniprot">
       <property name="uniprot.organisms" value="9606 10090" />
       <property name="src.data.dir" location="/micklem/data/uniprot/current/" />
@@ -34,12 +25,12 @@
       <property name="fasta.loaderClassName"
                 value="org.intermine.bio.dataconversion.UniProtFastaLoaderTask"/>
     </source>
+    
     <source name="entrez-organism" type="entrez-organism" dump="true">
       <property name="src.data.file" location="organisms.xml"/>
     </source>
 
-
-   <source name="update-publications" type="update-publications">
+    <source name="update-publications" type="update-publications">
       <property name="src.data.file" location="publications.xml"/>
       <property name="loadFullRecord" value="true"/>
     </source>
