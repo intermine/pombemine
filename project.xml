@@ -3,11 +3,16 @@
   <property name="common.os.prefix" value="common"/>
 
   <sources>
+    <source name="pombe-genes" type="pombe-genes" version="1.0.0">
+      <property name="src.data.dir" location="/home/daniela/Projects/data/pombemine/" />
+    </source>
+
     <source name="uniprot" type="uniprot">
       <property name="uniprot.organisms" value="9606 10090" />
       <property name="src.data.dir" location="/micklem/data/uniprot/current/" />
     </source>
 
+<!--
     <source name="uniprot-keywords" type="uniprot-keywords">
       <property name="src.data.dir" location="/micklem/data/uniprot/current" />
       <property name="src.data.dir.includes" value="keywlist.xml" />
@@ -25,7 +30,7 @@
       <property name="fasta.loaderClassName"
                 value="org.intermine.bio.dataconversion.UniProtFastaLoaderTask"/>
     </source>
-    
+ -->   
     <source name="entrez-organism" type="entrez-organism" dump="true">
       <property name="src.data.file" location="organisms.xml"/>
     </source>
