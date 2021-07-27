@@ -3,7 +3,7 @@
   <property name="common.os.prefix" value="common"/>
   
   <sources>
-    <source name="pombe-genes" type="pombe-genes">
+    <source name="pombe-genes" type="pombe-genes" version="1.0.0">
       <property name="src.data.dir" location="/micklem/data/pombemine/gene_data" />
     </source>
    
@@ -15,7 +15,7 @@
     <source name="protein2ipr" type="protein2ipr">
      <property name="src.data.dir" location="/micklem/data/interpro/match_complete/current"/>
      <property name="src.data.dir.includes" value="protein2ipr.dat"/>
-     <property name="protein2ipr.organisms" value="927"/>
+     <property name="protein2ipr.organisms" value="4986"/>
      <property name="osAlias" value="os.production"/>
     </source>
   
@@ -37,7 +37,7 @@
      <source name="biogrid" type="biogrid" version="4.3.0" dump="true">
       <property name="src.data.dir" location="/micklem/data/biogrid/current" />
       <property name="src.data.dir.includes" value="*psi25.xml" />
-      <property name="biogrid.organisms" value="927" />
+      <property name="biogrid.organisms" value="4986" />
     </source>
 
     <source name="update-publications" type="update-publications">
