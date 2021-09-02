@@ -12,20 +12,20 @@
     </source>
     
     <source name="uniprot" type="uniprot">
-      <property name="uniprot.organisms" value="4986"/>
+      <property name="uniprot.organisms" value="4896"/>
       <property name="creatego" value="true"/>
       <property name="src.data.dir" location="/micklem/data/uniprot/current"/>
     </source>
+    
+    <source name="interpro" type="interpro">
+      <property name="src.data.dir" location="/micklem/data/interpro/current" />
+    </source>    
     <!-- has to be after UniProt because only loads protein domains for loaded proteins -->
     <source name="protein2ipr" type="protein2ipr">
      <property name="src.data.dir" location="/micklem/data/interpro/match_complete/current"/>
      <property name="src.data.dir.includes" value="protein2ipr.dat"/>
-     <property name="protein2ipr.organisms" value="4986"/>
+     <property name="protein2ipr.organisms" value="4896"/>
      <property name="osAlias" value="os.production"/>
-    </source>
-  
-    <source name="interpro" type="interpro">
-      <property name="src.data.dir" location="/micklem/data/interpro/current" />
     </source>
     <source name="interpro-go" type="interpro-go">
       <property name="src.data.dir" location="/micklem/data/interpro/ontology/current"/>
@@ -42,7 +42,7 @@
      <source name="biogrid" type="biogrid" version="4.3.0" dump="true">
       <property name="src.data.dir" location="/micklem/data/biogrid/current" />
       <property name="src.data.dir.includes" value="*psi25.xml" />
-      <property name="biogrid.organisms" value="4986" />
+      <property name="biogrid.organisms" value="4896" />
     </source>
 
     <source name="update-publications" type="update-publications">
