@@ -39,7 +39,7 @@
       <property name="src.data.includes" value="**/gene_association*" />
     </source>
     
-     <source name="biogrid" type="biogrid" version="4.3.0" dump="true">
+     <source name="biogrid" type="biogrid" dump="true">
       <property name="src.data.dir" location="/micklem/data/biogrid/current" />
       <property name="src.data.dir.includes" value="*psi25.xml" />
       <property name="biogrid.organisms" value="4896" />
