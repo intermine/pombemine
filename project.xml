@@ -44,6 +44,10 @@
       <property name="src.data.dir.includes" value="*psi25.xml" />
       <property name="biogrid.organisms" value="4896" />
     </source>
+    
+    <source name="psi-mi-ontology" type="psi-mi-ontology">
+      <property name="src.data.file" location="/micklem/data/psi/ontology/current/psi-mi.obo"/>
+    </source>
 
     <source name="update-publications" type="update-publications">
       <property name="src.data.file" location="publications.xml"/>
