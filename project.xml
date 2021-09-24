@@ -7,7 +7,7 @@
       <property name="src.data.dir" location="/micklem/data/pombemine/gene_data" />
     </source>
    
-    <source name="entrez-organism" type="entrez-organism" dump="true">
+    <source name="entrez-organism" type="entrez-organism" version="1.0.0" dump="true">
       <property name="src.data.file" location="organisms.xml"/>
     </source>
     
