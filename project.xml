@@ -34,12 +34,23 @@
     <source name="go" type="go">
       <property name="src.data.file" location="/micklem/data/go-annotation/current/go-basic.obo" />
     </source>
-    <source name="go-annotation" type="go-annotation">
+    <source name="pombe-go-annotation" type="pombe-go-annotation" version="1.0.0">
       <property name="src.data.dir" location="/micklem/data/go-annotation/current/pombe" />
       <property name="src.data.includes" value="**/gene_association*" />
     </source>
     
-     <source name="biogrid" type="biogrid" dump="true">
+    <source name="fypo" type="fypo" version="1.0.0">
+      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/fypo.obo" />
+    </source>
+    <source name="peco" type="peco" version="1.0.0">
+      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/peco.obo" />
+    </source>
+    <source name="pombe-alleles" type="pombe-alleles" version="1.0.0">
+      <property name="src.data.dir" location="/micklem/data/pombemine/phenotypes" />
+      <property name="src.data.dir.includes" value="**/phenotype_annotations*" />
+    </source>
+    
+    <source name="biogrid" type="biogrid" dump="true">
       <property name="src.data.dir" location="/micklem/data/biogrid/current" />
       <property name="src.data.dir.includes" value="*psi25.xml" />
       <property name="biogrid.organisms" value="4896" />
