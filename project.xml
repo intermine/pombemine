@@ -40,13 +40,13 @@
     </source>
     
     <source name="fypo" type="fypo" version="1.0.0">
-      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/fypo-simple-pombase.obo" />
+      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/current/fypo-simple-pombase.obo" />
     </source>
     <source name="fypo-ext" type="fypo" version="1.0.0">
-      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/fypo_extension.obo" />
+      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/current/fypo_extension.obo" />
     </source>
     <source name="peco" type="peco" version="1.0.0">
-      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/peco.obo" />
+      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/current/peco.obo" />
     </source>
     <source name="pombe-alleles" type="pombe-alleles" version="1.0.0">
       <property name="src.data.dir" location="/micklem/data/pombemine/phenotypes" />
