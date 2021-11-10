@@ -49,7 +49,7 @@
       <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/current/peco.obo" />
     </source>
     <source name="pombe-alleles" type="pombe-alleles" version="1.0.0">
-      <property name="src.data.dir" location="/micklem/data/pombemine/phenotypes" />
+      <property name="src.data.dir" location="/micklem/data/pombemine/phenotypes/current" />
       <property name="src.data.dir.includes" value="**/phenotype_annotations*" />
     </source>
     
