@@ -75,6 +75,7 @@
       <property name="src.data.file" location="/micklem/data/psi/ontology/current/psi-mi.obo"/>
     </source>
     
+    <!--  
     <source name="cerevisiae-orthologs" type="cerevisiae-orthologs">
       <property name="src.data.file" location="/micklem/data/pombemine/orthologues/cerevisiae-orthologs.txt"/>
     </source>
@@ -82,6 +83,7 @@
     <source name="human-orthologues" type="human-orthologues">
       <property name="src.data.file" location="/micklem/data/pombemine/orthologues/human-orthologs.txt"/>
     </source>
+-->
     
 
     <source name="update-publications" type="update-publications">
