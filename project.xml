@@ -12,8 +12,6 @@
     </source>
     
     <source name="pombe-fasta" type="fasta">
-      <property name="fasta.loaderClassName"
-                value="org.intermine.bio.dataconversion.FastaLoaderTask.java"/>
       <property name="fasta.taxonId" value="4896"/>
       <property name="fasta.dataSetTitle" value="pombe-fasta"/>
       <property name="fasta.dataSourceName" value="pombase"/>
