@@ -83,7 +83,6 @@
     </source>
 -->
     
-
     <source name="update-publications" type="update-publications">
       <property name="src.data.file" location="publications.xml"/>
       <property name="loadFullRecord" value="true"/>
@@ -91,14 +90,9 @@
   </sources>
 
   <post-processing>
-
- <!--    <post-process name="create-utr-references"/> -->
     <post-process name="create-references" />
- <!--    <post-process name="make-spanning-locations"/> -->
     <post-process name="create-chromosome-locations-and-lengths"/>
-<!--    <post-process name="create-intergenic-region-features"/> -->
     <post-process name="transfer-sequences"/>
-<!--    <post-process name="populate-child-features"/> -->
     <post-process name="create-gene-flanking-features" />
     <post-process name="do-sources" />
     <post-process name="create-location-overlap-index"/>
