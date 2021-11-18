@@ -10,8 +10,7 @@
     <source name="entrez-organism" type="entrez-organism" dump="true">
       <property name="src.data.file" location="organisms.xml"/>
     </source>
-
-    <!--
+    
     <source name="pombe-fasta" type="fasta">
       <property name="fasta.taxonId" value="4896"/>
       <property name="fasta.dataSetTitle" value="pombe-fasta"/>
@@ -19,8 +18,8 @@
       <property name="fasta.className" value="org.intermine.model.bio.Chromosome"/>
       <property name="fasta.classAttribute" value="primaryIdentifier"/>
       <property name="src.data.dir" location="/micklem/data/pombemine/fasta/"/>
+      <property name="fasta.includes" value="*.fa"/>
     </source>
-  -->
     
     <source name="pombe-uniprot" type="pombe-uniprot" version="1.0.0">
       <property name="uniprot.organisms" value="284812"/>
