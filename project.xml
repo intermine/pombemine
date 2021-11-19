@@ -5,6 +5,8 @@
   <sources>
     <source name="pombe-genes" type="pombe-genes" version="1.0.0">
       <property name="src.data.dir" location="/micklem/data/pombemine/gene_data" />
+      <property name="dataSetTitle" value="Pombe-gene data set"/>
+      <property name="dataSourceName" value="PomBase"/>
     </source>
    
     <source name="entrez-organism" type="entrez-organism" dump="true">
@@ -13,8 +15,8 @@
     
     <source name="pombe-fasta" type="fasta">
       <property name="fasta.taxonId" value="4896"/>
-      <property name="fasta.dataSetTitle" value="pombe-fasta"/>
-      <property name="fasta.dataSourceName" value="pombase"/>
+      <property name="fasta.dataSetTitle" value="Pombe-fasta data set"/>
+      <property name="fasta.dataSourceName" value="PomBase"/>
       <property name="fasta.className" value="org.intermine.model.bio.Chromosome"/>
       <property name="fasta.classAttribute" value="primaryIdentifier"/>
       <property name="src.data.dir" location="/micklem/data/pombemine/fasta/"/>
@@ -61,6 +63,8 @@
     <source name="pombe-alleles" type="pombe-alleles" version="1.0.0">
       <property name="src.data.dir" location="/micklem/data/pombemine/phenotypes/current" />
       <property name="src.data.dir.includes" value="**/phenotype_annotations*" />
+      <property name="dataSetTitle" value="PomBase phenotypes data set"/>
+      <property name="dataSourceName" value="PomBase"/>
     </source>
     
     <source name="biogrid" type="biogrid" dump="true">
