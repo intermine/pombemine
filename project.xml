@@ -60,8 +60,7 @@
     <source name="peco" type="peco" version="1.0.0">
       <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/current/peco.obo" />
     </source>
-    
-    <source name="eco-ontology" type="eco-ontology">
+    <source name="eco" type="eco">
       <property name="src.data.file" location="/micklem/data/eco/current/eco.obo"/>
     </source>
     
@@ -86,13 +85,11 @@
       <property name="src.data.dir" location="/micklem/data/pombemine/orthologues"/>
     </source>
     
-     <source name="panther" type="panther">
+    <source name="panther" type="panther">
         <property name="src.data.dir" location="/micklem/data/panther/current"/>
         <property name="panther.organisms" value="4896"/>
         <property name="panther.homologues" value="7227 10090 6239 10116 7955 4932 9606"/>
     </source>
-    
-    
     
     <source name="omim" type="omim" >
       <property name="src.data.dir" location="/micklem/data/metabolic/omim/current" />
