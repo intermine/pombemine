@@ -8,10 +8,6 @@
       <property name="dataSetTitle" value="Pombe-gene data set"/>
       <property name="dataSourceName" value="PomBase"/>
     </source>
-   
-    <source name="entrez-organism" type="entrez-organism" dump="true">
-      <property name="src.data.file" location="organisms.xml"/>
-    </source>
     
     <source name="pombe-fasta" type="fasta">
       <property name="fasta.taxonId" value="4896"/>
@@ -93,6 +89,10 @@
     
     <source name="omim" type="omim" >
       <property name="src.data.dir" location="/micklem/data/metabolic/omim/current" />
+    </source>
+    
+    <source name="entrez-organism" type="entrez-organism" dump="true">
+      <property name="src.data.file" location="organisms.xml"/>
     </source>
     
     <source name="update-publications" type="update-publications">
