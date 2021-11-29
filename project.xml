@@ -27,7 +27,7 @@
     <source name="hgnc" type="hgnc">
       <property name="src.data.dir" location="/micklem/data/human/hgnc/current" />
     </source>
-    
+    <!--
     <source name="ncbi-gff" type="ncbi-gff">
       <property name="gff3.taxonId" value="9606"/>
       <property name="gff3.seqClsName" value="Chromosome"/>
@@ -35,7 +35,7 @@
       <property name="gff3.dataSetTitle" value="ncbi-gff"/>
       <property name="src.data.dir" location="/micklem/data/human/gff/current"/>
     </source>
-
+    -->
     <source name="pombe-uniprot" type="pombe-uniprot" version="1.0.0">
       <property name="uniprot.organisms" value="284812"/>
       <property name="creatego" value="true"/>
