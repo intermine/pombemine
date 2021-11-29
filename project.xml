@@ -103,11 +103,11 @@
         <property name="panther.organisms" value="4896"/>
         <property name="panther.homologues" value="7227 10090 6239 10116 7955 4932 9606"/>
     </source>
-   
+   <!--
     <source name="omim" type="omim" >
       <property name="src.data.dir" location="/micklem/data/metabolic/omim/current" />
     </source>
-    
+    -->
     <source name="entrez-organism" type="entrez-organism" dump="true">
       <property name="src.data.file" location="organisms.xml"/>
     </source>
