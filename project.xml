@@ -24,7 +24,7 @@
       <property name="organisms" value="9606" />
     </source>
     
-    <source name="hgnc" type="hgnc" version="4.3.0">
+    <source name="hgnc" type="hgnc">
       <property name="src.data.dir" location="/micklem/data/human/hgnc/current" />
     </source>
     
