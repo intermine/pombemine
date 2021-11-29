@@ -30,6 +30,7 @@ overlapping_EST_set
 PCR_product
 point_mutation
 primer
+pseudogene
 rRNA
 regulatory_region
 reverse_primer
