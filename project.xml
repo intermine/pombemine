@@ -18,7 +18,7 @@
       <property name="src.data.dir" location="/micklem/data/pombemine/fasta/"/>
       <property name="fasta.includes" value="*.fa"/>
     </source>
-    
+   <!-- 
     <source name="ncbi-gene" type="ncbi-gene" >
       <property name="src.data.dir" location="/micklem/data/ncbi/current" />
       <property name="organisms" value="9606" />
@@ -27,7 +27,7 @@
     <source name="hgnc" type="hgnc">
       <property name="src.data.dir" location="/micklem/data/human/hgnc/current" />
     </source>
-    <!--
+  
     <source name="ncbi-gff" type="ncbi-gff">
       <property name="gff3.taxonId" value="9606"/>
       <property name="gff3.seqClsName" value="Chromosome"/>
