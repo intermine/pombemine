@@ -76,11 +76,21 @@
     <source name="eco" type="eco">
       <property name="src.data.file" location="/micklem/data/eco/current/eco.obo"/>
     </source>
+    <source name="mondo" type="mondo" version="1.0.0">
+      <property name="src.data.file" location="/micklem/data/pombemine/disease/current/mondo.obo"/>
+    </source>
     
     <source name="pombe-alleles" type="pombe-alleles" version="1.0.0">
       <property name="src.data.dir" location="/micklem/data/pombemine/phenotypes/current" />
       <property name="src.data.dir.includes" value="**/phenotype_annotations*" />
       <property name="dataSetTitle" value="PomBase phenotypes data set"/>
+      <property name="dataSourceName" value="PomBase"/>
+    </source>
+    
+    <source name="pombe-diseases" type="pombe-diseases" version="1.0.0">
+      <property name="src.data.dir" location="/micklem/data/pombemine/disease/current" />
+      <property name="src.data.dir.includes" value="**/disease_association*" />
+      <property name="dataSetTitle" value="PomBase disease data set"/>
       <property name="dataSourceName" value="PomBase"/>
     </source>
     
