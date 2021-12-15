@@ -19,6 +19,10 @@
       <property name="fasta.includes" value="*.fa"/>
     </source>
   
+    <source name="pombe-orthologue" type="pombe-orthologue" version="1.0.0">
+      <property name="src.data.dir" location="/micklem/data/pombemine/orthologues"/>
+    </source>
+    
     <source name="ncbi-gene" type="ncbi-gene" >
       <property name="src.data.dir" location="/micklem/data/ncbi/current" />
       <property name="organisms" value="9606" />
@@ -102,10 +106,6 @@
     
     <source name="psi-mi-ontology" type="psi-mi-ontology">
       <property name="src.data.file" location="/micklem/data/psi/ontology/current/psi-mi.obo"/>
-    </source>
-    
-    <source name="pombe-orthologue" type="pombe-orthologue" version="1.0.0">
-      <property name="src.data.dir" location="/micklem/data/pombemine/orthologues"/>
     </source>
     
     <source name="panther" type="panther">
