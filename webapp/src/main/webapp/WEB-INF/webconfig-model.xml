@@ -161,6 +161,15 @@
     </fields>
   </class>
 
+  <class className="org.intermine.model.bio.PhenotypeAnnotation">
+    <fields>
+      <fieldconfig fieldExpr="penetrance" label="Penetrance %"/>
+      <fieldconfig fieldExpr="allele.primaryIdentifier"/>
+      <fieldconfig fieldExpr="ontologyTerm.identifier" />
+      <fieldconfig fieldExpr="ontologyTerm.name" />
+    </fields>
+  </class>
+  
   <class className="org.intermine.model.bio.Protein">
     <inlinelist>
       <table path="synonyms.value" showLinksToObjects="true" />
