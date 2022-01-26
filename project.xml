@@ -28,9 +28,6 @@
       <property name="organisms" value="9606" />
     </source>
     
-    <source name="hgnc" type="hgnc">
-      <property name="src.data.dir" location="/micklem/data/human/hgnc/current" />
-    </source>
     <!--
     <source name="ncbi-gff" type="ncbi-gff">
       <property name="gff3.taxonId" value="9606"/>
