@@ -46,8 +46,8 @@
     <source name="interpro" type="interpro">
       <property name="src.data.dir" location="/micklem/data/interpro/current" />
     </source>    
-    <!-- has to be after UniProt because only loads protein domains for loaded proteins -->
-    <source name="protein2ipr" type="protein2ipr">
+    <!-- has to be after uniProtEntry because only loads protein domains for loaded uniProtEntries -->
+    <source name="pombe-protein2ipr" type="pombe-protein2ipr" version="1.0.0">
      <property name="src.data.dir" location="/micklem/data/interpro/match_complete/current"/>
      <property name="src.data.dir.includes" value="protein2ipr.dat"/>
      <property name="protein2ipr.organisms" value="4896"/>
