@@ -71,8 +71,15 @@
     <source name="fypo-ext" type="fypo" version="1.0.0">
       <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/current/fypo_extension.obo" />
     </source>
+    
+    <!--
     <source name="peco" type="peco" version="1.0.0">
       <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/current/peco.obo" />
+    </source>
+    -->
+
+    <source name="fyeco" type="fyeco" version="1.0.0">
+      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/current/fyeco.obo" />
     </source>
     <source name="eco" type="eco">
       <property name="src.data.file" location="/micklem/data/eco/current/eco.obo"/>
