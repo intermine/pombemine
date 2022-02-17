@@ -84,5 +84,6 @@
   <tag name="im:public" objectIdentifier="Gene_GOterm" type="template"/>
   <tag name="im:public" objectIdentifier="Gene_Transcripts" type="template"/>
   <tag name="im:public" objectIdentifier="Gene_Uniprot entry" type="template"/>
+  <tag name="im:preferredBagType" objectIdentifier="org.intermine.model.bio.Gene" type="class"/>
 </tags>
 </userprofile>
