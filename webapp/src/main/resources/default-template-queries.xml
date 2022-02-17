@@ -5,30 +5,15 @@
 <queries/>
   
 <template-queries>
-<template name="Gene_Interactions" title="Gene --&gt; Interactions" comment="">
-  <query name="Gene_Interactions" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.interactions.participant2.primaryIdentifier Gene.interactions.participant2.symbol Gene.interactions.details.relationshipType Gene.interactions.details.type Gene.interactions.details.experiment.name Gene.interactions.details.experiment.publication.pubMedId Gene.interactions.details.experiment.interactionDetectionMethods.identifier" longDescription="For a specified gene or set of genes show the genetic and physical interactions." sortOrder="Gene.primaryIdentifier asc">
-    <constraint path="Gene" editable="true" op="LOOKUP" value="pom34"/>
-  </query>
-</template>
-<template name="Gene_Protein_Domain" title="Gene --&gt; Protein domains" comment="">
-  <query name="Gene_Protein_Domain" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.proteins.primaryAccession Gene.proteins.proteinDomainRegions.proteinDomain.name Gene.proteins.proteinDomainRegions.start Gene.proteins.proteinDomainRegions.end Gene.proteins.proteinDomainRegions.database" longDescription="For a specified gene or list of genes, show the proteins and their domains." sortOrder="Gene.primaryIdentifier asc">
-    <constraint path="Gene" editable="true" op="LOOKUP" value="smd1"/>
-  </query>
-</template>
-<template name="Gene_TranscriptProteinUniProt" title="Gene --&gt; Transcripts, Encoded proteins and associated UniProt entry" comment="">
-  <query name="Gene_TranscriptProteinUniProt" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.transcripts.primaryIdentifier Gene.transcripts.transcriptType Gene.transcripts.protein.primaryAccession Gene.uniProtEntry.uniprotAccession Gene.uniProtEntry.uniprotName" longDescription="For a gene or list of genes, return the transcripts and associated proteins together with the associated UniProt entry." sortOrder="Gene.primaryIdentifier asc">
-    <constraint path="Gene" editable="true" op="LOOKUP" value="smd1"/>
-  </query>
-</template>
 <template name="Gene_HumanOrths" title="Gene --&gt; Human Orthologues" comment="">
   <query name="Gene_HumanOrths" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.homologues.homologue.primaryIdentifier Gene.homologues.homologue.secondaryIdentifier Gene.homologues.homologue.symbol Gene.homologues.homologue.organism.name" longDescription="For a specified gene, show the human orthologues (Pombase curated data)" sortOrder="Gene.primaryIdentifier asc" constraintLogic="A and B">
     <constraint path="Gene.homologues.homologue.organism.name" code="A" editable="false" description="" op="=" value="Homo sapiens"/>
     <constraint path="Gene" code="B" editable="true" op="LOOKUP" value="smd1"/>
   </query>
 </template>
-<template name="Gene_Protein" title="Gene --&gt; Transcripts and Encoded Proteins" comment="">
-  <query name="Gene_Protein" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.transcripts.primaryIdentifier Gene.transcripts.transcriptType Gene.transcripts.protein.primaryAccession Gene.transcripts.protein.name" longDescription="For a specified gene or list of genes, return the transcripts and encoded proteins." sortOrder="Gene.primaryIdentifier asc">
-    <constraint path="Gene" editable="true" op="LOOKUP" value="smd1"/>
+<template name="Gene_Interactions" title="Gene --&gt; Interactions" comment="">
+  <query name="Gene_Interactions" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.interactions.participant2.primaryIdentifier Gene.interactions.participant2.symbol Gene.interactions.details.relationshipType Gene.interactions.details.type Gene.interactions.details.experiment.name Gene.interactions.details.experiment.publication.pubMedId Gene.interactions.details.experiment.interactionDetectionMethods.identifier" longDescription="For a specified gene or set of genes show the genetic and physical interactions." sortOrder="Gene.primaryIdentifier asc">
+    <constraint path="Gene" editable="true" op="LOOKUP" value="pom34"/>
   </query>
 </template>
 <template name="Gene_CerevisiaeOrths" title="Gene --&gt; S. cerevisiae orthologues" comment="">
@@ -37,8 +22,23 @@
     <constraint path="Gene" code="B" editable="true" op="LOOKUP" value="smd1"/>
   </query>
 </template>
-<template name="Gene_AllelePhenotype" title="Gene --&gt; alleles and phenotypes" comment="">
-  <query name="Gene_AllelePhenotype" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.alleles.primaryIdentifier Gene.alleles.symbol Gene.alleles.type Gene.alleles.phenotypeAnnotations.ontologyTerm.name Gene.alleles.phenotypeAnnotations.evidence.publications.pubMedId" longDescription="For a specified gene or genes, show alleles and associated phenotypes." sortOrder="Gene.primaryIdentifier asc">
+<template name="Gene_Uniprot entry" title="Gene --&gt; UniProt Entry" comment="">
+  <query name="Gene_Uniprot entry" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.uniProtEntry.uniprotAccession Gene.uniProtEntry.uniprotName" longDescription="For a specified gene or list of genes, return the entry from the UniProt database." sortOrder="Gene.primaryIdentifier asc">
+    <constraint path="Gene" editable="true" op="LOOKUP" value="smd1"/>
+  </query>
+</template>
+<template name="Gene_Protein" title="Gene --&gt; Transcripts and Encoded Proteins" comment="">
+  <query name="Gene_Protein" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.transcripts.primaryIdentifier Gene.transcripts.transcriptType Gene.transcripts.protein.primaryAccession Gene.transcripts.protein.name" longDescription="For a specified gene or list of genes, return the transcripts and encoded proteins." sortOrder="Gene.primaryIdentifier asc">
+    <constraint path="Gene" editable="true" op="LOOKUP" value="smd1"/>
+  </query>
+</template>
+<template name="Gene_TranscriptProteinUniProt" title="Gene --&gt; Transcripts, Encoded proteins and associated UniProt entry" comment="">
+  <query name="Gene_TranscriptProteinUniProt" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.transcripts.primaryIdentifier Gene.transcripts.transcriptType Gene.transcripts.protein.primaryAccession Gene.uniProtEntry.uniprotAccession Gene.uniProtEntry.uniprotName" longDescription="For a gene or list of genes, return the transcripts and associated proteins together with the associated UniProt entry." sortOrder="Gene.primaryIdentifier asc">
+    <constraint path="Gene" editable="true" op="LOOKUP" value="smd1"/>
+  </query>
+</template>
+<template name="Gene_Transcripts" title="Gene --&gt; Transcripts" comment="">
+  <query name="Gene_Transcripts" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.transcripts.primaryIdentifier Gene.transcripts.transcriptType" longDescription="For a specified gene or list of genes, show the transcripts." sortOrder="Gene.primaryIdentifier asc">
     <constraint path="Gene" editable="true" op="LOOKUP" value="smd1"/>
   </query>
 </template>
@@ -47,8 +47,18 @@
     <constraint path="Allele" editable="true" op="LOOKUP" value="smd1delta"/>
   </query>
 </template>
-<template name="GOterm_Genes" title="GO term --&gt; Genes" comment="">
-  <query name="GOterm_Genes" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.goAnnotation.ontologyTerm.name Gene.goAnnotation.qualifier Gene.goAnnotation.annotationExtension.description Gene.goAnnotation.evidence.code.code" longDescription="Return all genes for a specified GO term" sortOrder="Gene.primaryIdentifier asc">
+<template name="Gene_MONDOdisease" title="Gene -&gt; Disease (MONDO)" comment="">
+  <query name="Gene_MONDOdisease" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.diseases.mondoTerm.name Gene.diseases.mondoTerm.identifier Gene.diseases.mondoTerm.dataSets.name" longDescription="For a specified gene or genes return associations to MONDO disease terms.">
+    <constraint path="Gene" editable="true" op="LOOKUP" value="gls2"/>
+  </query>
+</template>
+<template name="Gene_AllelePhenotype" title="Gene --&gt; alleles and phenotypes" comment="">
+  <query name="Gene_AllelePhenotype" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.alleles.primaryIdentifier Gene.alleles.symbol Gene.alleles.type Gene.alleles.phenotypeAnnotations.ontologyTerm.name Gene.alleles.phenotypeAnnotations.penetrance Gene.alleles.phenotypeAnnotations.evidence.publications.pubMedId" longDescription="For a specified gene or genes, show alleles and associated phenotypes." sortOrder="Gene.primaryIdentifier asc">
+    <constraint path="Gene" editable="true" op="LOOKUP" value="smd1"/>
+  </query>
+</template>
+<template name="GOterm_Genes" title="GO term --&gt; Genes and Annotation data" comment="">
+  <query name="GOterm_Genes" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.goAnnotation.ontologyTerm.name Gene.goAnnotation.qualifier Gene.goAnnotation.annotationExtension.description Gene.goAnnotation.evidence.code.code" longDescription="Return all genes and their GO annotation data for a specified GO term" sortOrder="Gene.primaryIdentifier asc">
     <join path="Gene.goAnnotation.annotationExtension" style="OUTER"/>
     <constraint path="Gene.goAnnotation.ontologyTerm.name" editable="true" op="CONTAINS" value="spliceosomal complex"/>
   </query>
@@ -59,31 +69,34 @@
     <constraint path="Gene" editable="true" op="LOOKUP" value="smd1"/>
   </query>
 </template>
-<template name="Gene_Transcripts" title="Gene --&gt; Transcripts" comment="">
-  <query name="Gene_Transcripts" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.transcripts.primaryIdentifier Gene.transcripts.transcriptType" longDescription="For a specified gene or list of genes, show the transcripts." sortOrder="Gene.primaryIdentifier asc">
-    <constraint path="Gene" editable="true" op="LOOKUP" value="smd1"/>
+<template name="Gene_OMIMdisease" title="Gene --&gt; Human Orthologue + OMIM disease" comment="">
+  <query name="Gene_OMIMdisease" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.homologues.homologue.primaryIdentifier Gene.homologues.homologue.symbol Gene.homologues.homologue.organism.name Gene.homologues.homologue.diseases.name Gene.homologues.homologue.diseases.primaryIdentifier Gene.homologues.homologue.diseases.dataSets.name" longDescription="For a specified gene or genes, show any associated OMIM diseases for the Human orthologue." constraintLogic="A and B">
+    <constraint path="Gene.homologues.homologue.organism.name" code="A" editable="false" op="=" value="Homo sapiens"/>
+    <constraint path="Gene" code="B" editable="true" op="LOOKUP" value="abc2"/>
   </query>
 </template>
-<template name="Gene_Uniprot entry" title="Gene --&gt; UniProt Entry" comment="">
-  <query name="Gene_Uniprot entry" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.uniProtEntry.uniprotAccession Gene.uniProtEntry.uniprotName" longDescription="For a specified gene or list of genes, return the entry from the UniProt database." sortOrder="Gene.primaryIdentifier asc">
+<template name="Gene_Phenotype" title="Gene(s) --&gt; Phenotye annotations" comment="">
+  <query name="Gene_Phenotype" model="genomic" view="Gene.primaryIdentifier Gene.symbol Gene.alleles.phenotypeAnnotations.ontologyTerm.name" longDescription="For a specified gene or list of genes return the phenotype annotations." sortOrder="Gene.primaryIdentifier asc">
     <constraint path="Gene" editable="true" op="LOOKUP" value="smd1"/>
   </query>
 </template>
 </template-queries>
 
 <tags>
-  <tag name="im:public" objectIdentifier="Gene_Interactions" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_Protein_Domain" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_TranscriptProteinUniProt" type="template"/>
   <tag name="im:public" objectIdentifier="Gene_HumanOrths" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_Protein" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_Interactions" type="template"/>
   <tag name="im:public" objectIdentifier="Gene_CerevisiaeOrths" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_AllelePhenotype" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_Uniprot entry" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_Protein" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_TranscriptProteinUniProt" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_Transcripts" type="template"/>
   <tag name="im:public" objectIdentifier="Allele_Phenotype" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_MONDOdisease" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_AllelePhenotype" type="template"/>
   <tag name="im:public" objectIdentifier="GOterm_Genes" type="template"/>
   <tag name="im:public" objectIdentifier="Gene_GOterm" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_Transcripts" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_Uniprot entry" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_OMIMdisease" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_Phenotype" type="template"/>
   <tag name="im:preferredBagType" objectIdentifier="org.intermine.model.bio.Gene" type="class"/>
 </tags>
 </userprofile>
