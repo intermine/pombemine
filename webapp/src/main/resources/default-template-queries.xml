@@ -106,7 +106,6 @@
   <tag name="im:public" objectIdentifier="Gene_Interactions" type="template"/>
   <tag name="im:public" objectIdentifier="Gene_TranscriptProteinUniProt" type="template"/>
   <tag name="im:public" objectIdentifier="Gene_Uniprot entry" type="template"/>
-  <tag name="im:public" objectIdentifier="Allele_Phenotype" type="template"/>
   <tag name="im:public" objectIdentifier="Gene_AllelePhenotype" type="template"/>
   <tag name="im:public" objectIdentifier="Allele_Phenotype" type="template"/>
   <tag name="im:public" objectIdentifier="Gene_HumanOrths" type="template"/>
