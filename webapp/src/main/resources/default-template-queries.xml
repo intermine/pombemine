@@ -83,20 +83,37 @@
 </template-queries>
 
 <tags>
-  <tag name="im:public" objectIdentifier="Gene_HumanOrths" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_Interactions" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_CerevisiaeOrths" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_Uniprot entry" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_Protein" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_TranscriptProteinUniProt" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_Transcripts" type="template"/>
-  <tag name="im:public" objectIdentifier="Allele_Phenotype" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_MONDOdisease" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_AllelePhenotype" type="template"/>
-  <tag name="im:public" objectIdentifier="GOterm_Genes" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_GOterm" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_OMIMdisease" type="template"/>
-  <tag name="im:public" objectIdentifier="Gene_Phenotype" type="template"/>
+  <tag name="Disease" objectIdentifier="Gene_MONDOdisease" type="template"/>
+  <tag name="Disease" objectIdentifier="Gene_OMIMdisease" type="template"/>
+  <tag name="Genomics" objectIdentifier="Gene_TranscriptProteinUniProt" type="template"/>
+  <tag name="Genomics" objectIdentifier="Gene_Transcripts" type="template"/>
+  <tag name="Genomics" objectIdentifier="Gene_GOterm" type="template"/>
+  <tag name="Genomics" objectIdentifier="GOterm_Genes" type="template"/>
+  <tag name="Homology" objectIdentifier="Gene_CerevisiaeOrths" type="template"/>
+  <tag name="Homology" objectIdentifier="Gene_HumanOrths" type="template"/>
+  <tag name="Homology" objectIdentifier="Gene_OMIMdisease" type="template"/>
+  <tag name="Interaction" objectIdentifier="Gene_Interactions" type="template"/>
+  <tag name="Phenotype" objectIdentifier="Allle_Phenotype" type="template"/>
+  <tag name="Phenotype" objectIdentifier="Gene_AllelePhenotype" type="template"/>
+  <tag name="Phenotype" objectIdentifier="Gene_Phenotype" type="template"/>
+  <tag name="Protein" objectIdentifier="Gene_Protein" type="template"/>
+  <tag name="Protein" objectIdentifier="Gene_TranscriptProteinUniProt" type="template"/>
+  <tag name="Protein" objectIdentifier="Gene_Uniprot entry" type="template"/>
+  <tag name="bgpath:TestFolder" objectIdentifier="testList3" type="bag"/>
   <tag name="im:preferredBagType" objectIdentifier="org.intermine.model.bio.Gene" type="class"/>
-</tags>
+  <tag name="im:public" objectIdentifier="Gene_Protein" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_Transcripts" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_Interactions" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_TranscriptProteinUniProt" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_Uniprot entry" type="template"/>
+  <tag name="im:public" objectIdentifier="Allele_Phenotype" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_AllelePhenotype" type="template"/>
+  <tag name="im:public" objectIdentifier="Allele_Phenotype" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_HumanOrths" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_CerevisiaeOrths" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_GOterm" type="template"/>
+  <tag name="im:public" objectIdentifier="GOterm_Genes" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_Phenotype" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_OMIMdisease" type="template"/>
+  <tag name="im:public" objectIdentifier="Gene_MONDOdisease" type="template"/>
 </userprofile>
