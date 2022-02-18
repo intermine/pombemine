@@ -115,4 +115,5 @@
   <tag name="im:public" objectIdentifier="Gene_Phenotype" type="template"/>
   <tag name="im:public" objectIdentifier="Gene_OMIMdisease" type="template"/>
   <tag name="im:public" objectIdentifier="Gene_MONDOdisease" type="template"/>
+</tags>
 </userprofile>
