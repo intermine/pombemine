@@ -93,7 +93,7 @@
   <tag name="Homology" objectIdentifier="Gene_HumanOrths" type="template"/>
   <tag name="Homology" objectIdentifier="Gene_OMIMdisease" type="template"/>
   <tag name="Interaction" objectIdentifier="Gene_Interactions" type="template"/>
-  <tag name="Phenotype" objectIdentifier="Allle_Phenotype" type="template"/>
+  <tag name="Phenotype" objectIdentifier="Allele_Phenotype" type="template"/>
   <tag name="Phenotype" objectIdentifier="Gene_AllelePhenotype" type="template"/>
   <tag name="Phenotype" objectIdentifier="Gene_Phenotype" type="template"/>
   <tag name="Protein" objectIdentifier="Gene_Protein" type="template"/>
