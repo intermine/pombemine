@@ -332,8 +332,8 @@
                      externalLink="http://amigo.geneontology.org/amigo/term/"
                      correctionCoefficient="org.intermine.bio.web.widget.GeneLengthCorrectionCoefficient"/>
     <enrichmentwidgetdisplayer id="fypo_enrichment_for_allele"
-                               title="Phenotype Ontology Enrichment"
-                               description="Phenotype terms enriched for items in this list."
+                               title="Phenotype Ontology Enrichment (Alleles)"
+                               description="Phenotype terms enriched for alleles in this list."
                                label="Phenotype Term"
                                filterLabel="Ontology"
                                filters="fission_yeast_phenotype"
@@ -347,5 +347,21 @@
                                views="symbol,primaryIdentifier,organism.name,
                              phenotypeAnnotations.ontologyTerm.identifier, phenotypeAnnotations.ontologyTerm.name,
                              phenotypeAnnotations.ontologyTerm.parents.identifier,phenotypeAnnotations.ontologyTerm.parents.name"/>
+    <enrichmentwidgetdisplayer id="fypo_enrichment_for_gene"
+                               title="Phenotype Ontology Enrichment (Genes)"
+                               description="Phenotype terms enriched for genes in this list."
+                               label="Phenotype Term"
+                               filterLabel="Ontology"
+                               filters="fission_yeast_phenotype"
+                               startClass="Gene"
+                               startClassDisplay="primaryIdentifier"
+                               enrich="alleles.phenotypeAnnotations.ontologyTerm.parents.name"
+                               enrichIdentifier="alleles.phenotypeAnnotations.ontologyTerm.parents.identifier"
+                               constraints="alleles.phenotypeAnnotations.ontologyTerm.parents.namespace=[Ontology],organism.name=[list],
+                                            primaryIdentifier != null"
+                               typeClass="Gene"
+                               views="symbol,primaryIdentifier,organism.name,
+                             alleles.phenotypeAnnotations.ontologyTerm.identifier, alleles.phenotypeAnnotations.ontologyTerm.name,
+                             alleles.phenotypeAnnotations.ontologyTerm.parents.identifier,alleles.phenotypeAnnotations.ontologyTerm.parents.name"/>
   </widgets>
 </webconfig>
