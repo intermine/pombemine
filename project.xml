@@ -4,7 +4,7 @@
   
   <sources>
     <source name="pombe-genes" type="pombe-genes" version="1.0.0">
-      <property name="src.data.dir" location="/micklem/data/pombemine/gene_data" />
+      <property name="src.data.dir" location="/micklem/data/pombemine/current/gene_data" />
       <property name="dataSetTitle" value="Pombe-gene data set"/>
       <property name="dataSourceName" value="PomBase"/>
     </source>
@@ -15,12 +15,12 @@
       <property name="fasta.dataSourceName" value="PomBase"/>
       <property name="fasta.className" value="org.intermine.model.bio.Chromosome"/>
       <property name="fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="src.data.dir" location="/micklem/data/pombemine/fasta/"/>
+      <property name="src.data.dir" location="/micklem/data/pombemine/fasta/current/"/>
       <property name="fasta.includes" value="*.fa"/>
     </source>
   
     <source name="pombe-orthologue" type="pombe-orthologue" version="1.0.0">
-      <property name="src.data.dir" location="/micklem/data/pombemine/orthologues"/>
+      <property name="src.data.dir" location="/micklem/data/pombemine/orthologues/current"/>
     </source>
     
     <source name="ncbi-gene" type="ncbi-gene" >
@@ -58,28 +58,28 @@
     </source>
     
     <source name="go" type="go">
-      <property name="src.data.file" location="/micklem/data/go-annotation/current/go-basic.obo" />
+      <property name="src.data.file" location="/micklem/data/pombemine/go-annotation/current/go-basic.obo" />
     </source>
     <source name="pombe-go-annotation" type="pombe-go-annotation" version="1.0.0">
-      <property name="src.data.dir" location="/micklem/data/go-annotation/current/pombe" />
+      <property name="src.data.dir" location="/micklem/data/pombemine/pombe-go-annotation/current/pombe" />
       <property name="src.data.includes" value="**/gene_association*" />
     </source>
     
     <source name="fypo" type="fypo" version="1.0.0">
-      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/current/fypo-simple-pombase.obo" />
+      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/ontologies/current/fypo-simple-pombase.obo" />
     </source>
     <source name="fypo-ext" type="fypo" version="1.0.0">
-      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/current/fypo_extension.obo" />
+      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/ontologies/current/fypo_extension.obo" />
     </source>
 
     <source name="fyeco" type="fyeco" version="1.0.0">
-      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/current/fyeco.obo" />
+      <property name="src.data.file" location="/micklem/data/pombemine/phenotypes/ontologies/current/fyeco.obo" />
     </source>
     <source name="eco" type="eco">
       <property name="src.data.file" location="/micklem/data/eco/current/eco.obo"/>
     </source>
     <source name="mondo" type="mondo" version="1.0.0">
-      <property name="src.data.file" location="/micklem/data/pombemine/disease/current/mondo.obo"/>
+      <property name="src.data.file" location="/micklem/data/mondo/current/mondo.obo"/>
     </source>
     
     <source name="pombe-alleles" type="pombe-alleles" version="1.0.0">
