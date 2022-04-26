@@ -62,7 +62,7 @@
     </source>
     <source name="pombe-go-annotation" type="pombe-go-annotation" version="1.0.0">
       <property name="src.data.dir" location="/micklem/data/pombemine/pombe-go-annotation/current/pombe" />
-      <property name="src.data.includes" value="**/gene_association*" />
+      <property name="src.data.includes" value="**/pombase-latest*" />
     </source>
     
     <source name="fypo" type="fypo" version="1.0.0">
