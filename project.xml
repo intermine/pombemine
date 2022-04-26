@@ -4,7 +4,7 @@
   
   <sources>
     <source name="pombe-genes" type="pombe-genes" version="1.0.0">
-      <property name="src.data.dir" location="/micklem/data/pombemine/current/gene_data" />
+      <property name="src.data.dir" location="/micklem/data/pombemine/gene_data/current" />
       <property name="dataSetTitle" value="Pombe-gene data set"/>
       <property name="dataSourceName" value="PomBase"/>
     </source>
