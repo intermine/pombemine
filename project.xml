@@ -108,7 +108,7 @@
     
     <source name="panther" type="panther">
         <property name="src.data.dir" location="/micklem/data/panther/current"/>
-        <property name="panther.organisms" value="4896"/>
+        <property name="panther.organisms" value="284812"/>
         <property name="panther.homologues" value="7227 10090 6239 10116 7955 4932 9606"/>
     </source>
     
